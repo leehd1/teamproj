@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- JQuery datepicker -->
+<link rel="stylesheet" href="js/jquery-ui.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+</script>
+
+<title>Insert title here</title>
+<style type="text/css">
+
+    #ula > .dropdown:hover .dropdown-menu { 
+    display:block;
+    margin-top:0; 
+    position: absolute;
+    }
+    .my-2 a{
+        font-size: 1.2em;
+        text-decoration: none;
+        font-weight:bold;
+    }
+    .my-2 a:HOVER {
+    color: #F78536 !important;
+    }
+    .text-travel{
+    color: #F78536 !important;
+    }
+    ul, li{
+        float: left;
+    }
+
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-scroller py-1 mr-4">
+        <nav class="nav d-flex justify-content-end mr-4">
+        <ul style="list-style: none;">
+           <li><a class="p-2 text-muted" href="#">로그인</a></li>
+            <li><a class="p-2 text-muted" href="#">회원가입</a></li>
+            <li><ul class="navbar-nav" id="ula">
+                <li class="nav-item dropdown">
+                    <a class="p-2 text-muted dropdown-toggle" href="#" id="navbarDropdownMenuLink"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      마이페이지
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-muted" href="#">나의 예약/확인</a></li>
+                        <li><a class="dropdown-item text-muted" href="#">문의내역</a><li>
+                        <li><a class="dropdown-item text-muted" href="#">회원정보수정</a><li>
+                    </ul>
+                </li>
+            </ul></li>
+           </ul>
+        </nav>
+    </div>
+    
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+    
+        <div class="my-0 mr-md-auto">
+            <img src="mainlogo.png">
+        </div>
+        <nav class="my-2 my-md-0 mr-md-auto">
+            <h5>
+                
+                
+        <div class="nav-scroller py-1 mr-4">
+        <nav class="nav d-flex justify-content-end mr-4">
+            <a class="p-2 font-weight-bold text-travel" href="#">HOME</a>
+            
+            <ul class="navbar-nav" id="ula">
+                <li class="nav-item dropdown">
+                    <a class="nav-link p-2 text-muted dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     패키지
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <h6>
+                            <a class="dropdown-item text-muted" href="#">중국</a>
+                            <ul class="navbar-nav" id="ula">
+                <li class="nav-item dropdown">
+                    <a class="nav-link p-2 text-muted dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     패키지
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <h6>
+                            <a class="dropdown-item text-muted" href="#">중국</a>
+                            <a class="dropdown-item text-muted" href="#">동남아</a>
+                            
+                            <a class="dropdown-item text-muted" href="#">일본</a>
+                            <a class="dropdown-item text-muted" href="#">미국</a>
+                        </h6>
+                    </div>
+                </li>
+            </ul>
+                            
+                            <a class="dropdown-item text-muted" href="#">일본</a>
+                            <a class="dropdown-item text-muted" href="#">미국</a>
+                        </h6>
+                    </div>
+                </li>
+            </ul>
+            <a class="p-2 text-muted" href="#">자유여행</a>
+            <a class="p-2 text-muted" href="#">상품후기</a>
+            <a class="p-2 text-muted" href="#">이벤트</a>
+            <a class="p-2 text-muted" href="#">고객센터</a>
+        </nav>
+    </div>
+                
+              
+            </h5>
+        </nav>
+    </div>
+</header>
+
+<section role="main">
+    <div class="container">
+        <h1 class="h2 mt-2 mb-2 pb-2 border-bottom">Dashboard</h1>
+        <div class="d-flex align-items-center p-3 my-3 rounded shadow border-bottom border-right row">
+            <div class="col-sm-12 p-0 m-0 mb-3">
+                <table class="table table-bordered p-0 m-0">
+                    <thead>
+                        <tr class="bg-info">
+                            <th class="bg-info text-white text-center" colspan="4">예약정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-center">예약코드</th>
+                            <td class="text-center">KR201907050112</td>
+                            <th class="text-center">예약상태</th>
+                            <td class="text-center">결제대기</td>
+                        </tr>
+                        <tr>
+                            <th class="text-center">상품명</th>
+                            <td class="text-center">허니문 패키지 5박 3일</td>
+                            <th class="text-center">일정</th>
+                            <td class="text-center">2019-07-05 ~ 2019-07-31</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-12 p-0 m-0 mb-0">
+                <div class="table-responsive p-0 m-0">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="bg-info">
+                                <th class="bg-info text-white text-center" colspan="40">여행자정보</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-center">구분</th>
+                                <th class="text-center">한글이름</th>
+                                <th class="text-center">영문성</th>
+                                <th class="text-center">영문이름</th>
+                                <th class="text-center">생년월일</th>
+                                <th class="text-center">휴대폰번호</th>
+                                <th class="text-center">성별</th>
+                                <th class="text-center">국적</th>
+                                <th class="text-center">여권번호</th>
+                                <th class="text-center">여권만료일</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">성인</td>
+                                <td class="text-center">리현도</td>
+                                <td class="text-center">Lee</td>
+                                <td class="text-center">HyengDo</td>
+                                <td class="text-center">1960-12-32</td>
+                                <td class="text-center">01095871238</td>
+                                <td class="text-center">남자</td>
+                                <td class="text-center">크로아티아</td>
+                                <td class="text-center">M87654321</td>
+                                <td class="text-center">2032-12-28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 p-0 m-0 mb-3">
+                <table class="table table-bordered p-0 m-0">
+                    <thead>
+                        <tr class="bg-info">
+                            <th class="bg-info text-white text-center" colspan="4">결제정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-center">결제수단</th>
+                            <th class="text-center">결제금액</th>
+                            <th class="text-center">입금일자</th>
+                            <th class="text-center">승인번호</th>
+                        </tr>
+                        <tr>
+                            <td class="text-center">무통장 입금</td>
+                            <td class="text-center">1,565,400</td>
+                            <td class="text-center">2019-07-05</td>
+                            <td class="text-center">ck12344321</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="rounded border bg-light col-sm-12 pt-3 m-0 row">
+                <div class="col-sm-6">
+                    <h1 class="h5 mt-2 mb-3 pb-3 border-bottom">결제방법</h1>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                        <label class="custom-control-label" for="customRadio1">신용/체크카드 결제</label>
+                    </div>
+                
+                    <div class="collapse mt-3 mb-3" id="collapseExample1">
+                        <div class="card card-body">
+                            <h1 class="h6 mt-2 mb-3 pb-3 border-bottom">신용/체크카드</h1>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">카드선택</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>카드를 선택해주세요</option>
+                                    <option value="1">삼성카드</option>
+                                    <option value="2">현태카드</option>
+                                    <option value="3">농협카드</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="custom-control custom-radio col-sm-6 mt-3 mb-3">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                        <label class="custom-control-label" for="customRadio2">현금 결제</label>
+                    </div>
+                    
+                    <div class="collapse mt-3 mb-3" id="collapseExample2">
+                        <div class="card card-body">
+                            <h1 class="h6 mt-2 mb-3 pb-3 border-bottom">무통장 입금</h1>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">은행</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>은행 선택해주세요</option>
+                                    <option value="1">농협</option>
+                                    <option value="2">우리은행</option>
+                                    <option value="3">국민은행</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rounded border bg-white col-sm-6 mb-3 p-3">
+                    <h1 class="h2 mt-2 mb-2 pb-2 border-bottom">결제금액 : 1,565,400</h1>
+                    <div>
+                        <button class="btn btn-primary btn-lg btn-block">결제하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                   <p class="mt-1 mb-1 text-white">
+                       &copy; 2019. 리현도. All rights reserved.<br>
+                       tel : 010-1234-5678<br>
+                       fax : 055-123-987<br>
+                       address : 부산광역시 부산진구 동천로 109 삼한골든게이트빌딩 7층<br>
+                       email : abc@naver.com<br>
+                       <a class="badge badge-secondary" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+                         이메일 문의
+                       </a>
+                       <div class="collapse" id="collapse">
+                           <div class="card card-body">
+                           <form action="${contextPath}/sendMail.do" method="post">
+                               <div class="form-group">
+                                   <label for="email">이메일</label>
+                                   <input type="email" class="form-control" name="email" id="email" placeholder="답변받을 이메일 주소">
+                               </div>   
+                               <div class="form-group">
+                                   <label for="subject">주제</label>
+                                   <input type="text" class="form-control" name="subject" id="subject" placeholder="">
+                               </div>   
+                               <div class="form-group">
+                                   <label for="content">내용</label>
+                                   <textarea class="form-control" id="content" name="content" rows="6" style="resize: none;"></textarea>
+                               </div>
+                               <div class="form-group">
+                                   <button type="submit" class="btn btn-primary">보내기</button>
+                               </div>
+                           </form>
+                           </div>
+                       </div>
+                   </p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="dropdown text-right">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    참고사이트
+                        </a>
+                    
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="http://postcode.map.daum.net/guide" target="_blank">주소검색 API</a>
+                            <a class="dropdown-item" href="https://getbootstrap.com/" target="_blank">부트스트랩</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
